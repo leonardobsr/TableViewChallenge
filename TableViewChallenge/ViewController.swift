@@ -9,12 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let DATA = Data()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
         tableView.separatorColor = .clear
         tableView.backgroundColor = .clear
         tableView.dataSource = self
@@ -25,7 +28,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return DATA.matrix.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,22 +37,18 @@ extension ViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-//        let cat = cats[indexPath.row]
-//
-//        cell.catImageView.image = UIImage(named: cat.image)
-//        cell.nameLabel.text = cat.name
         cell.sessionCellView.layer.cornerRadius = 60
         cell.sessionCellView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMinXMinYCorner]
         cell.sessionCellView.backgroundColor = #colorLiteral(red: 0.2980392157, green: 0.3058823529, blue: 0.6274509804, alpha: 1)
         cell.sessionImageButton.layer.cornerRadius = 60
 //        cell.sessionImageView.image = UIImage(named: "DorianLewisThumb")
-        cell.sessionNameLabel.attributedText = labelWithImage(image: "Caminho 22", label: "Who buys your game?")
-        cell.sessionIdTimeLabel.text = "Session: 5 (20 min)"
-        cell.sessionSpeakerJobLabel.text = "Darian Lewis - EA Games"
+        print(indexPath.row)
+        cell.sessionNameLabel.attributedText = labelWithImage(image: "Caminho 22", label: DATA.matrix[indexPath.row].title)
+        cell.sessionIdTimeLabel.text = DATA.matrix[indexPath.row].sessionName
+        cell.sessionSpeakerJobLabel.text = DATA.matrix[indexPath.row].company
     
-        cell.sessionTimeLabel.attributedText = labelWithImage(image: "Agrupar 300", label: "14 pm")
-        cell.sessionLocalizationLabel.attributedText = labelWithImage(image: "Agrupar 302", label: "Hall 2")
-        cell.sessionKnowMoreButton.titleLabel?.text = "know more"
+        cell.sessionTimeLabel.attributedText = labelWithImage(image: "Agrupar 300", label: DATA.matrix[indexPath.row].time)
+        cell.sessionLocalizationLabel.attributedText = labelWithImage(image: "Agrupar 302", label: DATA.matrix[indexPath.row].hall)
         return cell
     }
     
