@@ -38,9 +38,12 @@ extension ViewController: UITableViewDataSource {
 //
 //        cell.catImageView.image = UIImage(named: cat.image)
 //        cell.nameLabel.text = cat.name
-        cell.sessionCellView.layer.cornerRadius = 25
+        cell.sessionCellView.layer.cornerRadius = 60
         cell.sessionCellView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMinXMinYCorner]
         cell.sessionCellView.backgroundColor = .red
+        cell.sessionImageButton.layer.cornerRadius = 60
+//        cell.sessionImageView.image = UIImage(named: "DorianLewisThumb")
+        cell.sessionNameLabel.text = "teste"
         return cell
     }
 }

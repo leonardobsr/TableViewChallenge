@@ -12,7 +12,7 @@ class SessionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var sessionContentView: UIView!
     @IBOutlet weak var sessionCellView: UIView!
-    @IBOutlet weak var sessionImageView: UIImageView!
+    @IBOutlet weak var sessionImageButton: UIButton!
     @IBOutlet weak var sessionNameLabel: UILabel!
     @IBOutlet weak var sessionSpeakerJobLabel: UILabel!
     @IBOutlet weak var sessionIdTimeLabel: UILabel!
