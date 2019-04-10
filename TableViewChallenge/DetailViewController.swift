@@ -33,13 +33,17 @@ class DetailViewController: UIViewController {
         sessionNameBackgroundView.layer.cornerRadius = 15
         sessionNameBackgroundView.backgroundColor = SessionDay(rawValue: session.day)!.getColor()
         sessionNameLabel.attributedText = labelWithImage(image: "Caminho 22", label: session.title)
+        
+        sessionIdTimeLabel.textColor = SessionDay(rawValue: session.day)!.getColor()
         sessionIdTimeLabel.text = session.sessionName
+        sessionSpeakerJobLabel.textColor = SessionDay(rawValue: session.day)!.getColor()
         sessionSpeakerJobLabel.text = session.company
         
         let fullString = NSMutableAttributedString(string: "")
         fullString.append(labelWithImage(image: SessionDay(rawValue: session.day)!.getTimeIcon(), label: session.time))
         fullString.append(NSAttributedString(string: " "))
         fullString.append(labelWithImage(image: SessionDay(rawValue: session.day)!.getLocationIcon(), label: session.hall))
+        sessionTimeLocationLabel.textColor = SessionDay(rawValue: session.day)!.getColor()
         sessionTimeLocationLabel.attributedText = fullString
         
         sessionDescriptionView.layer.cornerRadius = 60
