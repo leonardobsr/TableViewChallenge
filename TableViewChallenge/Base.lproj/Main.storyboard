@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="124" estimatedRowHeight="124" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WZt-Nn-3Mt">
-                                <rect key="frame" x="0.0" y="119.5" width="320" height="448.5"/>
+                                <rect key="frame" x="0.0" y="133.5" width="320" height="434.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SessionCell" id="iht-Xn-4jb" customClass="SessionTableViewCell" customModule="TableViewChallenge" customModuleProvider="target">
@@ -34,7 +34,7 @@
                                                     <subviews>
                                                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" restorationIdentifier="sessionImageButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn9-bo-0vU" userLabel="sessionImageButton">
                                                             <rect key="frame" x="3" y="3" width="116" height="114"/>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="bn9-bo-0vU" secondAttribute="height" multiplier="58:57" id="wsQ-E2-lkq"/>
                                                             </constraints>
@@ -43,33 +43,33 @@
                                                             </connections>
                                                         </button>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-cU-GJB" userLabel="sessionSummaryView">
-                                                            <rect key="frame" x="133" y="0.0" width="151" height="120"/>
+                                                            <rect key="frame" x="133" y="3" width="151" height="114"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sn0-cs-njd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="137" height="120"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="137" height="114"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="79b-X8-joF" userLabel="sessionNameLabel">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="137" height="28.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="137" height="27"/>
                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="IFC-eJ-11u">
-                                                                            <rect key="frame" x="0.0" y="29.5" width="137" height="59"/>
+                                                                            <rect key="frame" x="0.0" y="28" width="137" height="56"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W8M-vl-kiu">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="74.5" height="59"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="74.5" height="56"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r88-et-cwY" userLabel="sessionIdTimeLabel">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="74.5" height="29"/>
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="74.5" height="27.5"/>
                                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yl-LW-p1R" userLabel="sessionSpeakerJobLabel">
-                                                                                            <rect key="frame" x="0.0" y="30" width="74.5" height="29"/>
+                                                                                            <rect key="frame" x="0.0" y="28.5" width="74.5" height="27.5"/>
                                                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +78,7 @@
                                                                                     </subviews>
                                                                                 </stackView>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oz4-0N-aME" userLabel="sessionInterestButton">
-                                                                                    <rect key="frame" x="88.5" y="0.0" width="48.5" height="59"/>
+                                                                                    <rect key="frame" x="88.5" y="0.0" width="48.5" height="56"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                     <state key="normal" image="Agrupar 356">
@@ -88,29 +88,29 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Hg-KSS">
-                                                                            <rect key="frame" x="0.0" y="89.5" width="137" height="30.5"/>
+                                                                            <rect key="frame" x="0.0" y="85" width="137" height="29"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09U-1z-5Ii" userLabel="sessionTimeLabel">
-                                                                                    <rect key="frame" x="0.0" y="13" width="31.5" height="17"/>
+                                                                                    <rect key="frame" x="0.0" y="11.5" width="31.5" height="17"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csl-nU-cvq" userLabel="sessionLocalizationLabel">
-                                                                                    <rect key="frame" x="32.5" y="13" width="32" height="17"/>
+                                                                                    <rect key="frame" x="32.5" y="11.5" width="32" height="17"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="sessionKnowMoreButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y70-BN-ZwC" userLabel="sessionKnowMoreButton">
-                                                                                    <rect key="frame" x="65.5" y="14" width="71.5" height="16.5"/>
+                                                                                    <rect key="frame" x="65.5" y="12.5" width="71.5" height="16.5"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2" maxY="0.0"/>
                                                                                     <state key="normal" title="know more" image="Agrupar 407">
-                                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <color key="titleColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     </state>
                                                                                     <connections>
                                                                                         <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmq-bk-ie1"/>
@@ -135,9 +135,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="bn9-bo-0vU" secondAttribute="bottom" constant="3" id="AQT-7j-ovT"/>
                                                         <constraint firstAttribute="trailing" secondItem="XqU-cU-GJB" secondAttribute="trailing" id="H6O-cw-Ks7"/>
+                                                        <constraint firstItem="XqU-cU-GJB" firstAttribute="top" secondItem="Vpc-Ah-xdM" secondAttribute="top" constant="3" id="HEx-ra-RNC"/>
                                                         <constraint firstItem="bn9-bo-0vU" firstAttribute="top" secondItem="Vpc-Ah-xdM" secondAttribute="top" constant="3" id="MrV-E2-dJp"/>
-                                                        <constraint firstAttribute="bottom" secondItem="XqU-cU-GJB" secondAttribute="bottom" id="PrH-3g-3cn"/>
-                                                        <constraint firstItem="XqU-cU-GJB" firstAttribute="top" secondItem="Vpc-Ah-xdM" secondAttribute="top" id="guf-Hw-ATU"/>
+                                                        <constraint firstAttribute="bottom" secondItem="XqU-cU-GJB" secondAttribute="bottom" constant="3" id="TlE-hH-SRc"/>
                                                         <constraint firstItem="bn9-bo-0vU" firstAttribute="leading" secondItem="Vpc-Ah-xdM" secondAttribute="leading" constant="3" id="lnI-SW-Fc2"/>
                                                         <constraint firstItem="XqU-cU-GJB" firstAttribute="leading" secondItem="bn9-bo-0vU" secondAttribute="trailing" constant="14" id="yIE-WD-DDQ"/>
                                                     </constraints>
@@ -218,16 +218,26 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spA-98-ZcC">
+                                <rect key="frame" x="36" y="118.5" width="248" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Rfx-uI-9bp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.027450980392156862" green="0.070588235294117646" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="M2R-vP-Ko8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53.060000000000002" id="2Ih-uq-hMD"/>
                             <constraint firstItem="M2R-vP-Ko8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="7Ld-65-Q67"/>
+                            <constraint firstItem="WZt-Nn-3Mt" firstAttribute="top" secondItem="spA-98-ZcC" secondAttribute="bottom" constant="14" id="Jy5-fj-Met"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WZt-Nn-3Mt" secondAttribute="bottom" id="UGf-HR-JYH"/>
-                            <constraint firstItem="WZt-Nn-3Mt" firstAttribute="top" secondItem="M2R-vP-Ko8" secondAttribute="bottom" constant="15" id="Vxb-9F-7Oe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M2R-vP-Ko8" secondAttribute="trailing" constant="36" id="cov-0Z-tGv"/>
+                            <constraint firstItem="spA-98-ZcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="36" id="ey9-Fj-SWD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZt-Nn-3Mt" secondAttribute="trailing" id="hzV-4e-lLy"/>
+                            <constraint firstAttribute="trailing" secondItem="spA-98-ZcC" secondAttribute="trailing" constant="36" id="nxo-s8-gb8"/>
                             <constraint firstItem="WZt-Nn-3Mt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tK8-iX-Svj"/>
+                            <constraint firstItem="spA-98-ZcC" firstAttribute="top" secondItem="M2R-vP-Ko8" secondAttribute="bottom" constant="14" id="zxZ-wr-5L6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -252,9 +262,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89p-JT-Ar5" userLabel="sessionNameBackgroundView">
                                 <rect key="frame" x="16" y="43" width="288" height="30.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-3M-O5y" userLabel="sessionNameLabel">
-                                        <rect key="frame" x="8" y="5" width="38" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-3M-O5y" userLabel="sessionNameLabel">
+                                        <rect key="frame" x="10" y="7" width="268" height="16.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -263,6 +272,10 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30.5" id="PFX-yL-T5f"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hwy-3M-O5y" secondAttribute="bottom" constant="7" id="Pow-DS-GsX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hwy-3M-O5y" secondAttribute="trailing" constant="10" id="gVr-qe-6if"/>
+                                    <constraint firstItem="Hwy-3M-O5y" firstAttribute="top" secondItem="89p-JT-Ar5" secondAttribute="top" constant="7" id="he6-oW-8Lt"/>
+                                    <constraint firstItem="Hwy-3M-O5y" firstAttribute="leading" secondItem="89p-JT-Ar5" secondAttribute="leading" constant="10" id="oz3-P5-0jz"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zZI-C7-zh0">
@@ -289,11 +302,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-Ig-z0k" userLabel="sessionBackButton">
-                                <rect key="frame" x="16" y="479" width="120" height="30"/>
+                                <rect key="frame" x="16" y="479" width="170" height="30"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.30588235289999999" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3DW-fk-wsO"/>
-                                    <constraint firstAttribute="width" constant="120" id="qZJ-Kh-N66"/>
+                                    <constraint firstAttribute="width" constant="170" id="XXS-VZ-zzr"/>
                                 </constraints>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -302,14 +315,14 @@
                                     <action selector="backButton:" destination="7SZ-ih-iJb" eventType="touchUpInside" id="nSw-GU-RaQ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-wK-vxz">
-                                <rect key="frame" x="16" y="439" width="120" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="j2m-wK-vxz">
+                                <rect key="frame" x="16" y="439" width="169" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXO-oP-pDV" userLabel="sessionSignupButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
                                         <color key="backgroundColor" red="0.29803921570000003" green="0.30588235289999999" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="B7z-At-iX5"/>
+                                            <constraint firstAttribute="width" constant="130" id="B7z-At-iX5"/>
                                             <constraint firstAttribute="height" constant="32" id="tlk-If-Joq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -319,18 +332,19 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnV-Tg-cxi" userLabel="sessionDayButton">
-                                        <rect key="frame" x="88" y="0.0" width="32" height="32"/>
+                                        <rect key="frame" x="137" y="0.0" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="5hO-cN-q34"/>
                                             <constraint firstAttribute="width" constant="32" id="9Ct-Yv-480"/>
                                         </constraints>
-                                        <state key="normal" title="Button" backgroundImage="Agrupar 404">
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="7" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="16" backgroundImage="Agrupar 404">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrW-C3-fwC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrW-C3-fwC" userLabel="sessionDescriptionBackgroundView">
                                 <rect key="frame" x="16" y="162.5" width="288" height="268.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYB-CM-W1f" userLabel="sessionDescriptionLabel">
@@ -386,10 +400,12 @@
                         <outlet property="sessionBackButton" destination="1LM-Ig-z0k" id="jvz-MY-ciC"/>
                         <outlet property="sessionDayButton" destination="gnV-Tg-cxi" id="l9g-AL-Lz7"/>
                         <outlet property="sessionDescriptionLabel" destination="qYB-CM-W1f" id="OVR-6b-TmR"/>
+                        <outlet property="sessionDescriptionView" destination="IrW-C3-fwC" id="Iwj-mT-dOf"/>
                         <outlet property="sessionIdTimeLabel" destination="HLD-lG-QqV" id="U6Y-fm-E2C"/>
                         <outlet property="sessionImageView" destination="lph-Kj-xxp" id="d2a-zJ-X6r"/>
                         <outlet property="sessionNameBackgroundView" destination="89p-JT-Ar5" id="kHq-2N-xSz"/>
                         <outlet property="sessionNameLabel" destination="Hwy-3M-O5y" id="ecb-gD-cJc"/>
+                        <outlet property="sessionSignupButton" destination="HXO-oP-pDV" id="BkH-zQ-2Yh"/>
                         <outlet property="sessionSpeakerJobLabel" destination="Ys4-Re-Aez" id="iZK-AZ-cIj"/>
                         <outlet property="sessionTimeLocationLabel" destination="pGX-YG-vTC" id="HzH-M5-bfi"/>
                     </connections>
