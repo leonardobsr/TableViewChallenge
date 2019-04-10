@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F48412F225C1F95004184FA /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F48412E225C1F95004184FA /* SessionTableViewCell.swift */; };
 		1F484131225D0C63004184FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F484130225D0C62004184FA /* Assets.xcassets */; };
+		1FB98035225E106700D7ED06 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB98034225E106700D7ED06 /* DetailViewController.swift */; };
+		1FB98037225E232D00D7ED06 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB98036225E232D00D7ED06 /* helpers.swift */; };
 		26DEEEED225BCBA600148D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEEEEC225BCBA600148D87 /* AppDelegate.swift */; };
 		26DEEEEF225BCBA600148D87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DEEEEE225BCBA600148D87 /* ViewController.swift */; };
 		26DEEEF2225BCBA600148D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DEEEF0225BCBA600148D87 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		1F48412E225C1F95004184FA /* SessionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		1F484130225D0C62004184FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FB98034225E106700D7ED06 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1FB98036225E232D00D7ED06 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
 		26DEEEE9225BCBA600148D87 /* TableViewChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DEEEEC225BCBA600148D87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26DEEEEE225BCBA600148D87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				1F484130225D0C62004184FA /* Assets.xcassets */,
 				1F48412E225C1F95004184FA /* SessionTableViewCell.swift */,
 				26DEEEFE225D24E100148D87 /* Data.swift */,
+				1FB98034225E106700D7ED06 /* DetailViewController.swift */,
+				1FB98036225E232D00D7ED06 /* helpers.swift */,
 			);
 			path = TableViewChallenge;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			files = (
 				1F48412F225C1F95004184FA /* SessionTableViewCell.swift in Sources */,
 				26DEEEEF225BCBA600148D87 /* ViewController.swift in Sources */,
+				1FB98035225E106700D7ED06 /* DetailViewController.swift in Sources */,
 				26DEEEED225BCBA600148D87 /* AppDelegate.swift in Sources */,
 				26DEEEFF225D24E200148D87 /* Data.swift in Sources */,
+				1FB98037225E232D00D7ED06 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,11 +17,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         tableView.separatorColor = .clear
         tableView.backgroundColor = .clear
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        let session = DATA.matrix[sender.tag]
+        performSegue(withIdentifier: "detailViewSegue", sender: session)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "detailViewSegue":
+            let destVC : DetailViewController = segue.destination as! DetailViewController
+            destVC.session = sender as? Session
+        default:
+            break
+        }
     }
 }
 
@@ -33,39 +49,32 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SessionCell") as? SessionTableViewCell else {
-            return UITableViewCell()
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SessionCell") as! SessionTableViewCell
+        
+        let session = DATA.matrix[indexPath.row]
+        
+        cell.sessionImageButton.tag = indexPath.row
+        cell.sessionKnowMoreButton.tag = indexPath.row
         
         cell.sessionCellView.layer.cornerRadius = 60
         cell.sessionCellView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMinXMinYCorner]
-        cell.sessionCellView.backgroundColor = #colorLiteral(red: 0.2980392157, green: 0.3058823529, blue: 0.6274509804, alpha: 1)
+        cell.sessionCellView.backgroundColor = SessionDay(rawValue: session.day)!.getColor()
         cell.sessionImageButton.layer.cornerRadius = 60
-//        cell.sessionImageView.image = UIImage(named: "DorianLewisThumb")
-        print(indexPath.row)
-        cell.sessionNameLabel.attributedText = labelWithImage(image: "Caminho 22", label: DATA.matrix[indexPath.row].title)
-        cell.sessionIdTimeLabel.text = DATA.matrix[indexPath.row].sessionName
-        cell.sessionSpeakerJobLabel.text = DATA.matrix[indexPath.row].company
+        
+        cell.sessionImageButton.setImage(UIImage(named: session.photo), for: .normal)
+        cell.sessionNameLabel.attributedText = labelWithImage(image: "Caminho 22", label: session.title)
+        cell.sessionIdTimeLabel.text = session.sessionName
+        cell.sessionSpeakerJobLabel.text = session.company
     
-        cell.sessionTimeLabel.attributedText = labelWithImage(image: "Agrupar 300", label: DATA.matrix[indexPath.row].time)
-        cell.sessionLocalizationLabel.attributedText = labelWithImage(image: "Agrupar 302", label: DATA.matrix[indexPath.row].hall)
+        cell.sessionTimeLabel.attributedText = labelWithImage(image: "Agrupar 300", label: session.time)
+        cell.sessionLocalizationLabel.attributedText = labelWithImage(image: "Agrupar 302", label: session.hall)
         return cell
-    }
-    
-    func labelWithImage(image: String, label: String) -> NSAttributedString {
-        let fullString = NSMutableAttributedString(string: "")
-        let image1Attachment = NSTextAttachment()
-        image1Attachment.image = UIImage(named: image)
-        let image1String = NSAttributedString(attachment: image1Attachment)
-        fullString.append(image1String)
-        fullString.append(NSAttributedString(string: " " + label))
-        return fullString
     }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cat = cats[indexPath.row]
-//        print(cat.name)
+//        let session = DATA.matrix[indexPath.row]
+//        performSegue(withIdentifier: "detailViewSegue", sender: session)
     }
 }

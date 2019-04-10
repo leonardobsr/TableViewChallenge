@@ -7,6 +7,65 @@
 //
 
 import Foundation
+import UIKit
+
+enum SessionDay: Int {
+    case purple = 15
+    case cyan = 16
+    case blue = 17
+    
+    func getColor() -> UIColor {
+        switch self {
+            case .purple:
+                return #colorLiteral(red: 0.2980392157, green: 0.3058823529, blue: 0.6274509804, alpha: 1)
+            
+            case .cyan:
+                return #colorLiteral(red: 0, green: 0.662745098, blue: 0.7294117647, alpha: 1)
+            
+            case .blue:
+                return #colorLiteral(red: 0.1529411765, green: 0.368627451, blue: 0.6039215686, alpha: 1)
+        }
+    }
+    
+    func getTimeIcon() -> String {
+        switch self {
+        case .purple:
+            return "purpleTime"
+            
+        case .cyan:
+            return "cyanTime"
+            
+        case .blue:
+            return "blueTime"
+        }
+    }
+    
+    func getLocationIcon() -> String {
+        switch self {
+        case .purple:
+            return "purpleLocation"
+            
+        case .cyan:
+            return "cyanLocation"
+            
+        case .blue:
+            return "blueLocation"
+        }
+    }
+    
+    func getCalendarIcon() -> String {
+        switch self {
+        case .purple:
+            return "purpleCalendar"
+            
+        case .cyan:
+            return "cyanCalendar"
+            
+        case .blue:
+            return "blueCalendar"
+        }
+    }
+}
 
 struct Session {
     var day: Int
